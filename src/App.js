@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import OurText from "./components/OurText";
 
 function App() {
+  const name = 'Rami';
+  // we use DHTML properties instead
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className="header"> Hello {name} </h1>
+      <OurText />
+      <hr />
+      <OurText></OurText>
     </div>
   );
 }
