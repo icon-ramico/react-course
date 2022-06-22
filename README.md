@@ -4,4 +4,6 @@
 
 [playlist](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d)
 
+[Mockaroo](https://www.mockaroo.com/)
+
 Feel free to to learn more from wherever you prefer ***SoloLearn***
