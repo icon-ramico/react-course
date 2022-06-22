@@ -1,14 +1,14 @@
-import OurText from "./components/OurText";
-
+import OurText from './components/OurText';
+import bankAccounts from './data/accounts'
 function App() {
   const name = 'Rami';
   // we use DHTML properties instead
   return (
-    <div className="App">
-      <h1 className="header"> Hello {name} </h1>
-      <OurText />
+    <div className='App'>
+      <h1 className='header'> Hello {name} </h1>
+      {/* <OurText />
       <hr />
-      <OurText></OurText>
+      <OurText></OurText> */}
     </div>
   );
 }
