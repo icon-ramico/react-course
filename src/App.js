@@ -6,9 +6,9 @@ function App() {
   return (
     <div className='App'>
       <h1 className='header'> Hello {name} </h1>
-      {/* <OurText />
+      <OurText />
       <hr />
-      <OurText></OurText> */}
+      <OurText></OurText>
     </div>
   );
 }
