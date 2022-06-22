@@ -6,4 +6,9 @@
 
 [Mockaroo](https://www.mockaroo.com/)
 
+These videos illustrate list keys in react 
+[1](https://www.youtube.com/watch?v=5s8Ol9uw-yM&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=17)
+[2](https://www.youtube.com/watch?v=0sasRxl35_8&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=18)
+[3](https://www.youtube.com/watch?v=xlPxnc5uUPQ&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=19)
+
 Feel free to to learn more from wherever you prefer ***SoloLearn***
