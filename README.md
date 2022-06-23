@@ -2,7 +2,7 @@
 
 [Readme](https://github.com/ramico/MDs/tree/main/react)
 
-[playlist](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d)
+[Playlist](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d)
 
 [Mockaroo](https://www.mockaroo.com/)
 
@@ -14,6 +14,6 @@ These videos illustrate list keys in react
 
 [JSON fake data](https://jsonplaceholder.typicode.com/)
 
-[life-cycle](https://javascript.plainenglish.io/lifecycle-methods-substitute-with-react-hooks-b173073052a)
+[Life-cycle](https://javascript.plainenglish.io/lifecycle-methods-substitute-with-react-hooks-b173073052a)
 
-Feel free to to learn more from wherever you prefer ***SoloLearn***
+Feel free to to learn more from wherever you prefer ***[SoloLearn](https://www.sololearn.com/home)***
