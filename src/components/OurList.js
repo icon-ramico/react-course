@@ -1,16 +1,17 @@
 const OurList = ({ ...props }) => {
-  const { gender, accounts } = props;
+  const { gender: title, accounts: comments, handleDeleteComment } = props;
   return (
     <div className='list'>
-      <h2>{gender}s</h2>
+      <h2>{title}</h2>
       {/* array.map((el, i) =>) */}
-      {accounts.map(account => (
-        <div key={account.id}>
+      {comments.map(comment => (
+        <div key={comment.id}>
           <p>
-            {account.first_name} {account.last_name}
+            {comment.title} 
             <br />
-            {account.iban}
+            {comment.body}
           </p>
+          {/* <button onClick={() => handleDeleteComment(comment.id)}>Delete</button> */}
         </div>
       ))}
     </div>
