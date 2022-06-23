@@ -14,6 +14,6 @@ These videos illustrate list keys in react
 
 [JSON fake data](https://jsonplaceholder.typicode.com/)
 
-[Life-cycle](https://javascript.plainenglish.io/lifecycle-methods-substitute-with-react-hooks-b173073052a)
+[Life-Cycle](https://javascript.plainenglish.io/lifecycle-methods-substitute-with-react-hooks-b173073052a)
 
 Feel free to to learn more from wherever you prefer ***[SoloLearn](https://www.sololearn.com/home)***
