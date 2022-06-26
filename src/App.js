@@ -3,7 +3,8 @@
 
 import { useEffect, useState } from 'react';
 import OurList from './components/OurList';
-// import useFetch from './hooks/useFetch';
+import Users from './components/Users';
+import useFetch from './hooks/useFetch';
 
 function App() {
   const [name, setName] = useState('Rami');
@@ -15,34 +16,38 @@ function App() {
   //   setbAccounts(newBankAccounts);
   // };
 
-  const [comments, setComments] = useState(null);
-  const [error, setError] = useState(null);
-  const [loading, setLoading] = useState(true);
+  // const [comments, setComments] = useState(null);
+  // const [error, setError] = useState(null);
+  // const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    // not async
-    fetch('https://jsonplaceholder.typicode.com/comments')
-      .then(res => {
-        if (!res.ok) throw new Error('Error from server');
-        return res.json();
-      }) // {name:'ali'} in json {"name":"ali"}
-      .then(data => {
-        setComments(data);
-        setLoading(false);
-      })
-      .catch(e => {
-        setError(e.message);
-        setLoading(false);
-      });
-    return () => {
-      setComments(null);
-      setError(null);
-      setLoading(true);
-    }; // clean up
-  }, []);
+  // useEffect(() => {
+  //   // not async
+  //   fetch('https://jsonplaceholder.typicode.com/comments1')
+  //     .then(res => {
+  //       if (!res.ok) throw new Error('Error from server!');
+  //       return res.json();
+  //     }) // {name:'ali'} in json {"name":"ali"}
+  //     .then(data => {
+  //       setComments(data);
+  //       setLoading(false);
+  //     })
+  //     .catch(e => {
+  //       setError(e.message);
+  //       setLoading(false);
+  //     });
+  //   return () => {
+  //     setComments(null);
+  //     setError(null);
+  //     setLoading(true);
+  //   }; // clean up
+  // }, []);
 
-
-  // const { data: comments, error, loading } = useFetch('https://jsonplaceholder.typicode.com/comments');
+  const { data: users, error, loading } = useFetch('https://jsonplaceholder.typicode.com/users');
+  const {
+    data: comments,
+    error: CommentError,
+    loading: CommentLoading,
+  } = useFetch('https://jsonplaceholder.typicode.com/comments');
 
   return (
     <div className='App'>
@@ -54,7 +59,14 @@ function App() {
       {loading && <div>Loading...</div>}
       {
         // javascript evaluation  for ('',false , null, 0, undefined) is: false
-        comments && <OurList accounts={comments} title='Comments' />
+        users && <Users data={users} title='Users' />
+      }
+
+      {CommentError && <div>{CommentError}</div>}
+      {CommentLoading && <div>Loading...</div>}
+      {
+        // javascript evaluation  for ('',false , null, 0, undefined) is: false
+        comments && <OurList data={comments} title='Comments' />
       }
       <button onClick={() => setName('ahmad')}>change name</button>
     </div>

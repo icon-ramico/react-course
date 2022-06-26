@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+
 const useFetch = url => {
   
   const [data, setData] = useState(null);
@@ -13,19 +14,22 @@ const useFetch = url => {
         return res.json();
       }) // {name:'ali'} in json {"name":"ali"}
       .then(data => {
-        setData(data);
+        setData(data.filter(e => 4 > e.id));
+        setLoading(false);
       })
       .catch(e => {
         setError(e.message);
+        setLoading(false);
       });
-    setLoading(false);
     return () => {
       setData(null);
       setError(null);
       setLoading(true);
     }; // clean up
   }, [url]);
-  return { data, error, loading };
+
+  return { data, error, loading }; // Tuple
+  // const [a, ,c] = useFetch
 };
 
 export default useFetch;
