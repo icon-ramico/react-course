@@ -1,5 +1,5 @@
-const OurList = ({ ...props }) => {
-  const { title, data: comments, handleDeleteComment } = props;
+const CommentList = ({ ...props }) => {
+  const { title, data: comments } = props;
   return (
     <div className='list'>
       <h2>{title}</h2>
@@ -11,11 +11,10 @@ const OurList = ({ ...props }) => {
             <br />
             {comment.body}
           </p>
-          {/* <button onClick={() => handleDeleteComment(comment.id)}>Delete</button> */}
         </div>
       ))}
     </div>
   );
 };
 
-export default OurList;
+export default CommentList;

@@ -1,23 +1,28 @@
-const OurList = ({ ...props }) => {
-  const {  title, data: users, handleDeleteComment } = props;
-  console.log(users);
+import { Link } from 'react-router-dom';
+
+const Users = ({ ...props }) => {
+  const { title, data: users } = props;
   return (
     <div className='list'>
       <h2>{title}</h2>
-      {/* array.map((el, i) =>) */}
       {users.map(user => (
         <div key={user.id}>
           <p>
-           Name: {user.name}<br />
-           User Name: {user.username}<br />
-           E-mail: {user.email}<br />
-           Phone: {user.phone}<br />
-           Website: {user.phone}<br />
-           <b>Comapany</b><br />
-           Company: {user.company.name}<br />
-           <b>Address</b><br />
-           City: {user.address.city}
-
+            <Link to={`/user_details/${user.id}`}>Name: {user.name}</Link>
+            <br />
+            E-mail: {user.email}
+            <br />
+            Phone: {user.phone}
+            <br />
+            Website: {user.phone}
+            <br />
+            <b>Comapany</b>
+            <br />
+            Company: {user.company.name}
+            <br />
+            <b>Address</b>
+            <br />
+            City: {user.address.city}
           </p>
           {/* <button onClick={() => handleDeleteComment(comment.id)}>Delete</button> */}
         </div>
@@ -26,4 +31,4 @@ const OurList = ({ ...props }) => {
   );
 };
 
-export default OurList;
+export default Users;
