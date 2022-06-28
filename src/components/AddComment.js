@@ -14,7 +14,7 @@ const AddComment = () => {
         </div>
         <div>
           <label htmlFor='comment_body'>Body</label>
-          <textarea id='comment_body' name='body'></textarea>
+          <textarea id='comment_body' name='body' required></textarea>
         </div>
         <div>
           <button type='submit'>Save</button>
