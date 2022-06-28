@@ -6,24 +6,39 @@
 .header {
   color: blueviolet;
 }
-.list{
+.list {
   margin-top: 30px;
 }
-div.list p{
+div.list p {
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
   margin-bottom: 3px;
   padding: 3px;
-  width: 300px;
+  width: 450px;
 }
-div.list a{
+div.list a {
   text-decoration: none;
 }
-.nav{
+.nav {
   margin-bottom: 30px;
 }
-.nav a{
+.nav a {
   display: inline-block;
-  margin-right:10px ;
   font-weight: bold;
   font-size: 1.2em;
+}
+.nav :first-child {
+  margin-right: 10px;
+}
+
+strong {
+  color: red;
+}
+
+form div :first-child {
+  margin-right: 30px;
+}
+
+form div * {
+  display: inline-block;
+  vertical-align: baseline;
 }
