@@ -17,3 +17,17 @@ These videos illustrate list keys in react
 [Life-Cycle](https://javascript.plainenglish.io/lifecycle-methods-substitute-with-react-hooks-b173073052a)
 
 Feel free to to learn more from wherever you prefer ***[SoloLearn](https://www.sololearn.com/home)***
+
+## Good links
+
+* [DHTML article](https://www.javatpoint.com/dhtml)
+
+* [name attributr](https://www.w3schools.com/tags/att_input_name.asp)
+
+## Future self learnnings
+
+* [React Router 6](https://www.youtube.com/playlist?list=PL4cUxeGkcC9h7F1LWaQ7MAI8ptg5VjvxJ)
+* [React Hooks](https://www.youtube.com/playlist?list=PLC3y8-rFHvwisvxhZ135pogtX7_Oe3Q3A)
+
+
+
